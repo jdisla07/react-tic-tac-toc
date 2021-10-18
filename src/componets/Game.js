@@ -42,14 +42,14 @@ function Game() {
 
     const renderMoves = () => {
         return (
-            <button onClick={()=>setBoard(Array(9).fill(null))}> Start Game</button>
+            <button onClick={()=>setBoard(Array(9).fill(null))}> Restart Game</button>
         )
     }
     return (
         <>
             <Board squares={board} onClick={handleClick}/>
             <div style={style}>
-                <p>{winner ? 'Winner'+winner:'Next Player'+ xIsNext ? 'X':'O'}</p>
+                <p>{winner ? 'Winner '+winner:'Next Player'+ xIsNext ? 'X':'O'}</p>
                 {renderMoves()}
             </div>
         </>
