@@ -10,7 +10,6 @@ const style = {
 }
 
 function Square(props) {
-    console.log(props)
     return (
         <button style={style} onClick={props.onClick}>{props.value}</button>
     );
